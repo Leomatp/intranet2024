@@ -1,0 +1,57 @@
+<div class="container">
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Nombres</label>
+      <input type="text" formControlName="nombrePersona" class="form-control" name="nombrePersona">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Ap. Paterno</label>
+      <input type="text" formControlName="paternoPersona" class="form-control" name="paternoPersona">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Ap. Materno</label>
+      <input type="text" formControlName="maternoPersona" class="form-control" name="maternoPersona">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Celular</label>
+      <input type="text" formControlName="celularPersona" class="form-control" name="celularPersona">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Fec. Nacimiento</label>
+      <input type="date" formControlName="fechaNacimientoPersona" class="form-control" name="fechaNacimientoPersona">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Correo</label>
+      <input type="email" formControlName="correoPersona" class="form-control" name="correoPersona">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">DNI</label>
+      <input type="text" formControlName="dniPersona" class="form-control" name="dniPersona">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Sexo</label>
+      <input type="text" formControlName="sexoPersona" class="form-control" name="sexoPersona">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Dirección</label>
+      <input type="text" formControlName="direccionPersona" class="form-control" name="direccionPersona">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Ciclo</label>
+      <input type="text" formControlName="ciclo" class="form-control" name="ciclo">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Sede</label>
+      <select class="form-select" formControlName="sede"
+        [ngClass]="{ 'is-invalid': submitted && formulario.controls['sede'].errors}">
+        <option *ngFor="let row of listaSedes" [ngValue]="row">{{row.nombreSede}}</option>
+      </select>
+      <div *ngIf="submitted && formulario.controls['sede'].errors?.['required']" class="invalid-feedback">
+        <div *ngIf="formulario.controls['sede'].errors?.['required']">Por favor, ingresa sede</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary">Aceptar</button>
+    </div>
+  </form>
+</div>

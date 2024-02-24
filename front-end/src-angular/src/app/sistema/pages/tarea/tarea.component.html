@@ -1,0 +1,25 @@
+
+<div class="container">
+    <h3 class="text-center">Lista Tareas</h3>
+
+    <table class="table table-dark table-hover mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Título</th>
+            <th scope="col">Asignación</th>
+            <th scope="col">Descripción</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr *ngFor="let row of listaTareas">
+            <th>{{row.codigoTarea}}</th>
+            <td>{{row.titulo}}</td>
+            <td>{{row.asignacion}}</td>
+            <td>{{row.descripcion}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+

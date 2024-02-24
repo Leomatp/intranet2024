@@ -1,0 +1,15 @@
+
+<div class="container">
+    <h3 class="text-center">Registrar Sede</h3>
+<form>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Código</label>
+        <input type="text" class="form-control" name="codigoSede" [(ngModel)]="codigoSede">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" name="nombreSede" [(ngModel)]="nombreSede">
+     </div>
+    <button type="button" class="btn btn-primary" (click)="grabarDatos()">Grabar</button>
+  </form>
+</div>

@@ -1,0 +1,21 @@
+
+<div class="container">
+    <h3 class="text-center">Lista Sedes</h3>
+    <a routerLink="/nueva-sede">Nueva sede</a> <br>
+    <table class="table mt-5 table-hover ">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nombre</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr *ngFor="let row of listaSedes">
+            <td>{{row.codigoSede}}</td>
+            <td>{{row.nombreSede}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<router-outlet></router-outlet>
+

@@ -1,0 +1,116 @@
+ /* Estilos para el contenedor principal */
+ .container {
+  padding: 30px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-item img {
+  border-radius: 5px;
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+/* Estilos para las pestañas de navegación */
+.nav-tabs {
+  background-color: #4caf50;
+  border-radius: 5px;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+/* Estilos para la sección de Misión y Visión */
+.section-title {
+  color: #4caf50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mission-vision-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.section-subtitle {
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.section-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Estilos para el footer */
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #f3f3f3;
+  color: #555;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-top: 2px solid #ccc;
+  transition: background-color 0.3s ease-in-out;
+}
+
+footer:hover {
+  background-color: #e0e0e0;
+}
+
+
+.footer-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.footer-contact-list li {
+  margin: 0 15px;
+  line-height: 1.6;
+}
+
+.footer-contact-list a {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-contact-list a:hover {
+  text-decoration: underline;
+  color: #689f38;
+}
+
+.footer-opening-hours {
+  font-size: 16px;
+  color: #777;
+  margin-top: 10px;
+}
